@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class fueool {
@@ -20,16 +21,30 @@ public class fueool {
                 System.out.println("what about miles per gallon?");
 
                 if(in.hasNextDouble()) {
+                    effucency = in.nextDouble();
+                    System.out.println("you can travel " + gallons * effucency);
+                    System.out.println("the cost for 100 miles is " + (100/effucency)*price);
 
 
 
                 }
+                else{
+
+                    trash = in.nextLine();
+                    in.nextLine();
+                    System.out.println("you gave me trash: "+trash);
+                    System.exit(0);
+
+                }
             }
+            else{
 
+                trash = in.nextLine();
+                in.nextLine();
+                System.out.println("you gave me trash: "+trash);
+                System.exit(0);
 
-
-
-
+            }
         }
         else{
 
@@ -41,6 +56,9 @@ public class fueool {
         }
 
     }
+
+
+
 
 
 
