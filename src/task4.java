@@ -12,6 +12,12 @@ public class task4 {
         System.out.println("how many meters");
         if (in.hasNextDouble()){
             meters = in.nextDouble();
+            miles = meters / 1609;
+            feet = meters * 3.281;
+            inches = meters * 39.37;
+            System.out.println("you have " +miles + " miles");
+            System.out.println("you have " +feet + " feet");
+            System.out.println("you have " +inches + " inches");
 
 
         }
